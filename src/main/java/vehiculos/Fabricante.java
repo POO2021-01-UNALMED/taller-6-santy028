@@ -26,13 +26,13 @@ public class Fabricante {
 				aux = f.ventas;
 			}
 		}
-		Fabricante great = new Fabricante();
+		Fabricante mas = new Fabricante();
 		for (Fabricante fabri: fabricantes) {
 			if (fabri.ventas == aux) {
-				great = fabri;
+				mas = fabri;
 			}
 		}
-		return great;	
+		return mas;	
 	}
 
 

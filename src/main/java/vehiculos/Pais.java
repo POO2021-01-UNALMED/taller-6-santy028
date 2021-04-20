@@ -24,13 +24,13 @@ public class Pais {
 				aux = pais.ventas;
 			}
 		}
-		Pais great = new Pais();
+		Pais mas = new Pais();
 		for (Pais pais: paises) {
 			if (pais.ventas == aux) {
-				great = pais;
+				mas = pais;
 			}
 		}
-		return great;	
+		return mas;	
 	}
 	
 	
