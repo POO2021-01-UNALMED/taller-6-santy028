@@ -2,20 +2,12 @@ package vehiculos;
 
 public class Camioneta extends Vehiculo {
 	boolean volco;
-	int cantidadcamionetas;
+	static int cantidadcamionetas;
 	
 	public Camioneta (String placa, int puertas, String nombre, int precio,  int peso, Fabricante fabricante,  boolean volco) {
-		super.placa=placa;
-		super.puertas=4;
-		super.nombre=nombre;
-		super.precio=precio;
-		super.peso=peso;
-		super.fabricante=fabricante;
-		this.volco=volco;
-		
-		
-		super.velocidadMaxima=90;
-		super.traccion= "4x4";
+		super(placa,puertas, 90,nombre, precio, peso,  "4X4", fabricante);
+		this.volco = volco;
+	
 		
 		super.cantidadvehiculos++;
 		this.cantidadcamionetas++;
